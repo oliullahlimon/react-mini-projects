@@ -19,7 +19,6 @@ const NewUser = () => {
 
   return (
     <div>
-      <h1>User Registration</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

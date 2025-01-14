@@ -3,6 +3,7 @@ import Users from "./Users";
 import NewUser from "./NewUser";
 import { v4 as uuidv4 } from "uuid";
 import { UsersContext } from "./UsersContext";
+import styles from "./uma.module.css";
 
 const UmaHome = () => {
   const [users, setUsers] = useState([
@@ -11,7 +12,8 @@ const UmaHome = () => {
   ]);
   return (
     <UsersContext.Provider value={{ users, setUsers }}>
-      <div>
+      <div className={styles.container}>
+        <h1>User Registration</h1>
         <NewUser />
         <Users />
       </div>
