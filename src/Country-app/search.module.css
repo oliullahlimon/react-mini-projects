@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container input {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.container input:focus {
+  background-color: bisque;
+}
